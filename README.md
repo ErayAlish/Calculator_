@@ -1,2 +1,2 @@
-# Calculator_with HTML and CSS
+# Calculator_with HTML, CSS and JS
 calculator ?
