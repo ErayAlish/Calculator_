@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel  = "manifest" href="manifest.webmanifest">
 
     <script>
         function appendOperation(operation) {
@@ -13,10 +14,10 @@
             
         }
 
-        function calculatorResult() {
+        function calculateResult() {
             let container = document.getElementById('resultArea');
             let result = eval(container.innerHTML);
-            container.innerHTML = result;
+           container.innerHTML = result;
         }
 
         function deleteLast() {
@@ -71,7 +72,7 @@
         <tr>
             <td onclick="appendOperation(0)">0</td> 
             <td onclick="appendOperation('.')">,</td>
-            <td id onclick="calculatorResult" id= "result">=</td>
+            <td onclick="calculateResult()" id= "result">=</td>
             <td onclick="appendOperation(' + ')" class ="hightlight">+</td>
           
         </tr>
