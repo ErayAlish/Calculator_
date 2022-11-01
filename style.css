@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+
+
+
+table {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(25, 25, 25);
+    color: white;
+}
+td {
+    width: 25%;
+    text-align: center;
+    font-size: 24px;
+    background-color:rgb(20, 20, 20);
+}
+
+td:hover {
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+#resultArea {
+      height: 30vh;
+      background-color: rgb(40, 40, 40);
+      color: aliceblue;
+      font-size: 64px;
+      display:flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 24px;
+      box-sizing: border-box;
+}
+#result {
+    background-color: rgb(255, 58, 156);
+}
+#result:hover {
+    background-color:white ;
+}
+
+.hightlight {
+    background-color: rgb(30, 30, 30);
+}
