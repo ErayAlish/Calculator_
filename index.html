@@ -29,6 +29,11 @@
             }
 
         }
+
+        function clearCalculator() {
+         document.getElementById("result").innerText = ""
+        }
+
        </script>
 </head>
 
@@ -40,13 +45,10 @@
 
     <table>
         <tr>
-            <td onclick="appendOperation(' ( ')" class="highlight">(</td> 
-            <td onclick="appendOperation(' ) ')" class="highlight">)</td>
-            <td></td>
+            <td onclick="appendOperation(' ( ')" class="highlight"> ( </td> 
+            <td onclick="appendOperation(' ) ')" class="highlight"> ) </td>
+            <td onclick="clearCalculator()">C</td>
             <td onclick="deleteLast()">DEL</td>
-
-
-
         </tr>
         <tr> 
             <td onclick="appendOperation(7)">7</td> 
@@ -73,9 +75,10 @@
             <td onclick="appendOperation(0)">0</td> 
             <td onclick="appendOperation('.')">,</td>
             <td onclick="calculateResult()" id= "result">=</td>
-            <td onclick="appendOperation(' + ')" class ="hightlight">+</td>
-          
+            <td onclick="appendOperation(' + ')" class ="hightlight">+</td>        
         </tr>
+
+        
 
 
 
